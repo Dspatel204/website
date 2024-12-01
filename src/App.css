@@ -191,11 +191,13 @@ nav ul li a {
   margin: 0 auto;
   gap: 20px;
 }
-.s-flex{
+
+.s-flex {
   display: flex;
   gap: 15px;
   margin: 20px;
 }
+
 .two img {
   max-width: 992px;
   width: 100%;
@@ -211,6 +213,13 @@ nav ul li a {
   transition: transform 0.3s ease;
 }
 
+.categories {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 90%;
+  margin-top: 30px;
+}
+
 .grid-item:hover {
   transform: scale(1.03);
 }
@@ -220,9 +229,11 @@ nav ul li a {
   /* height: auto; */
   display: block;
 }
+
 .grid-item.one {
-  width: 65%;
+  width: 42%;
 }
+
 .grid-item .overlay {
   position: absolute;
   bottom: 0;
@@ -233,4 +244,22 @@ nav ul li a {
   padding: 10px 15px;
   text-align: center;
   font-size: 16px;
+}
+
+.text h3 {
+  color: #786158;
+  text-align: center;
+}
+
+.kanvika-trust {
+  font-family: 'Playfair Display', serif;
+  /* Replace with your chosen Google Font */
+  font-weight: 400;
+  font-size: 60px;
+  color: #5A433A;
+  /* Use the actual color from your design */
+  text-align: center;
+}
+.logoimg {
+  padding: 30px;
 }
