@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import { FreeMode, Navigation } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+import { FreeMode, Navigation, Pagination } from "swiper/modules";
 const Home = () => {
   return (
     <div>
@@ -284,8 +284,8 @@ const Home = () => {
           <Swiper
             freeMode={true}
             grabCursor={true}
-            modules={[FreeMode, Navigation]}
-            navigation={{ clickable: true }}
+            modules={[FreeMode, Navigation, Pagination]}
+            pagination={{ clickable: true }} // Enable pagination with clickable dots
             className="allCategorySwiper"
             breakpoints={{
               0: {
@@ -479,8 +479,8 @@ const Home = () => {
           <Swiper
             freeMode={true}
             grabCursor={true}
-            modules={[FreeMode, Navigation]}
-            navigation={{ clickable: true }}
+            modules={[FreeMode, Navigation, Pagination]}
+            pagination={{ clickable: true }} // E nable pagination with clickable dots
             className="allCategorySwiper"
             breakpoints={{
               0: {
