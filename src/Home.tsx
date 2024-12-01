@@ -1,6 +1,3 @@
-import React from "react";
-import JewleryImg from "./assets/jewlery.png";
-
 const Home = () => {
   return (
     <div>
