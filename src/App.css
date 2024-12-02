@@ -357,7 +357,59 @@ nav ul li a {
 .ring-size {
   background-image: linear-gradient(rgba(231, 184, 149, 1),
       rgba(120, 97, 88, 1));
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: space-between;
 }
-.ring-size img{
-  width: 100%;
+
+.ring-size img {
+  width: 40%
+}
+.ring-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  left: 50px;
+  top: 100px;
+}
+
+.ring-txt p {
+  width: 410px;
+}
+.size-btn {
+  width: 140px;
+  appearance: none;
+  background-color: #786158;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.size-btn:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.jewelry-flex{
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  margin: 0 auto;
 }

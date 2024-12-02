@@ -579,12 +579,37 @@ const Home = () => {
         </div>
       </div>
       <div className="ring-size">
-<div className="ring-txt">
-  <h3>Are Forget Your Ring Size?</h3>
-  <p>
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-</div>
-        <img src="https://s3-alpha-sig.figma.com/img/9b4e/9fcf/fb2284fd95fbf5ac0cb5a68a96b9424e?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aPSTIZWugzm3yxJYRqy5n-d1~y60YsU~25CCIdykQvTYB04YKkW4Ncmtxcu0w2ipytAYPJ6D6EscqZibU69naJ08jO5TyUDHZirhYT8pYp9ALMgTQgWCoAQKooqDw4VrVXCIps0VaznoXSYFHnYZoqndtTdHzvtRSNlbVXH~IStlG-UDmGW1ry14g6~sATiI4agL-yRaNGy-FRY0Xp7EmognwjH0ojlAtnQNzpCKNvtvswxJVY6xPpf~kDnhVG7jBZvVs3dUA1s16EL2-6oYxciomWKN78ehf2V03feNhDgr-0xAXEKs0lIKNTHsQ4dCCnJRQrT-u69WqXfBzmaH4w__" alt="ring"/>
+        <div className="ring-txt">
+          <h3>Are Forget Your Ring Size?</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+          <button className="size-btn" role="button">
+            Find Size
+          </button>
+        </div>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/9b4e/9fcf/fb2284fd95fbf5ac0cb5a68a96b9424e?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aPSTIZWugzm3yxJYRqy5n-d1~y60YsU~25CCIdykQvTYB04YKkW4Ncmtxcu0w2ipytAYPJ6D6EscqZibU69naJ08jO5TyUDHZirhYT8pYp9ALMgTQgWCoAQKooqDw4VrVXCIps0VaznoXSYFHnYZoqndtTdHzvtRSNlbVXH~IStlG-UDmGW1ry14g6~sATiI4agL-yRaNGy-FRY0Xp7EmognwjH0ojlAtnQNzpCKNvtvswxJVY6xPpf~kDnhVG7jBZvVs3dUA1s16EL2-6oYxciomWKN78ehf2V03feNhDgr-0xAXEKs0lIKNTHsQ4dCCnJRQrT-u69WqXfBzmaH4w__"
+          alt="ring"
+        />
+      </div>
+      <div className="jewelry-flex">
+        <div className="jewelry-item">
+          <img
+            src="https://www.figma.com/file/RNqdm0Wowanflk9DqcXUnD/image/e106ec914fa8ee415e7fd08f29304a9962eba879"
+            alt="lady"
+          />
+          <p>Create Your Own Jewellery</p>
+        </div>
+        <div>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/1d8e/32e7/415bdf0243f749f07a5198606b6a5b63?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SiXOCsC0-tBSmcitzM~9Ke1PyS89tAZVN0GUD1tSh8-QxWNi7UVXNNVNgGExGfih-rdrW-f4XqIQH5xNaUXfG2UnyyQ8z7ejjvVFAB14TpUUoi8qUDEfQzLntHtdw8SVvEsAkov5QXtH2aO8e7h25H-RawrcPd15UMvSc7TptaRbXsetHDKY5MSx8t9LhHNuDj07Ijr9tKIALFWRCqPGASMRa~5RFPid89Prk8rpg9wiUEA2R-UZ4y91CLScN6uUGpGZPywf~MIk1m5PxP~-wV0si9d19Y235dbmjO-QvFl9~dh0Q6g7zfs~IdnvSI6RCB~qOI5IgwgwbeHCwPmoDw__"
+            alt="style"
+          />
+          <p>Consult With Our Stylist</p>
+        </div>
       </div>
     </div>
   );
