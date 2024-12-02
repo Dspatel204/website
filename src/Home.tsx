@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Shopiimg from "./assets/Frame 1.png";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 const Home = () => {
   return (
@@ -505,8 +506,8 @@ const Home = () => {
               },
             }}
           >
-            {["logo", "logo", "logo", "logo", "logo"].map((item) => (
-              <SwiperSlide>
+            {["logo", "logo", "logo", "logo", "logo"].map((item, id) => (
+              <SwiperSlide key={id}>
                 <div className="logoimg">
                   <h4>{item}</h4>
                 </div>
@@ -514,6 +515,76 @@ const Home = () => {
             ))}
           </Swiper>
         </div>
+      </div>
+      <div>
+        <h3 className="kanvika-trust">Shop By Category</h3>
+        <p className="p-center">
+          Brilliant design and unparalleled craftsmanship
+        </p>
+      </div>
+      <div className="jewelry-container">
+        <h2>Brilliant design and unparalleled craftsmanship</h2>
+        <div className="jewelry-grid">
+          <div className="jewelry-item">
+            <img
+              style={{ height: "400px" }}
+              src="https://s3-alpha-sig.figma.com/img/4d94/3e73/ec70b2ffa2627479002d45f50fbc30b2?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SJBn1RhGeDYU~ROnhL6X6XpVCcXcMJBY~bbueeb5LBWPDv2dvkLOUf9gIyUY8Dx9t5ezNJGTaMSfoZ4ZVb~jH-rKAGMp2QdUOZsk5Uo7~nR0kO9NSzr5H~BvfaK74vUflY5~WQUgQAlowil2--lZ8jbGyltDzDurLZTTAWUekuFtbXvQojTMmf8BOFwjfXzJhTBSRrVCO2CUXH0IzSRrFR2Z~ozCCZ3ZMIK0V9dCpC0wzrDtFzM9uJ6I9hcr0CZVv-8ru2bHaB-svzkTZ76x0aYufjzkrEkhYvW7TJk30syytsZp6pjQHp1aKSKkezheBf0Sz5o3oqcZqIQrJq-qRw__"
+              alt="Rings"
+            />
+            <p>Rings</p>
+          </div>
+          <div className="jewelry-item earing">
+            <img
+              style={{ height: "400px" }}
+              src="https://s3-alpha-sig.figma.com/img/885e/488a/9e4c05fd15e5c3b61943f29fcab53322?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f0xpfnU~xCEKknalsNk~mDv0wkdUyIGJvoW7HMPP-U0fOVQORyhNz3bMXeA3Vt-y9~kZ8sm1nLvXXSeGQ0dXcr3RxyMN0qlAw9EwExtIaExg9m7SXHcQSxzX50qphUwtHsvcQYx6rHAcylFvW-LoYrbGvEytf05sKcFnxUt~rUVkqzCke7yn-9vLMyOV5Idp9hfUWJoKGqW9RLTr7LF6ilQ79H20PBQFPprs~hWzkZ0s-ZgGF3h-WfPffq1hrkV-U6ETKw~wxbeDSOqGcPsDbW8p-4xSe6gysbz2mHBiAdf5bYynVcjDRgyrnN~OrDovDn3H6NeZmWbidJPb2cmLJg__"
+              alt="Earrings"
+            />
+            <p>Earrings</p>
+          </div>
+          <div className="jewelry-item">
+            <img
+              style={{ height: "400px" }}
+              src="https://s3-alpha-sig.figma.com/img/bd02/8fa8/746fc4f6bf62311f581c7c0adcecb0b7?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F~RXfQkOcFP9gtBu5Va7whd7vpTkeIADU2gwWI6vsDnTGmnauFfHzVQzTeCW0xYlYZ0Jb64vSyQFYVLM0A8ZVRkSLvAvRlP8pRE5cttmEhfzwsleclvIai4xjpYUOtHx-TFdWjI30iXMzwEUwlVn4K6Uya1pSZdYv6Mup9~OZbcWNL0UOJssA0HQ4Uu8vKkd9Ou2U0LKvky4r4cg894kHmxnapqazyplsviMslJPl3aHX-k75GPJLQgpY8h6uP2EoxkjkayfLEHmcu9p~kIM-1c-w5~j1-K6UVkybDFWru5Wo~05RIJYhn0ZhcejdYeiQBMMLbv1ocGJriDYeXo1kQ__"
+              alt="Pendants"
+            />
+            <p>Pendants</p>
+          </div>
+        </div>
+        <div className="jew-flex">
+          <div className="jewelry-item">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/1173/bab3/8982791c35ae390dd65b703997275d1b?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mTTYBhyFRYKidNrYjFcR~pQ4R9ebnqDMWgr4YgoatG1HStsbXIYPBljeraptrsewWLI3l47t~71jptKuXwHYWz-t51F9HsS1t38e61mNHT49C~iLtxQG5MiGMnHD3KLRGFRF56gwlj7ohEhbU1rEU6IBChEQ1SW9K~Fykvdg5N2OPffDo1AHWhHJeOFE3moJTeyv1ZXdUCOOdrfRfWCRQ33Bno-xXKC0-Qdg60HW~SrCGMzEzIucozeCZ24J6rdw0bWiU7JnaXE1G8V1nUYdCkiZnwtDomOO-YESlCDXVcHd5CBE1VQFj612gGGa4rbGKprpZBK1jflNEFDG82vA3g__"
+              alt="Bangles"
+            />
+            <p>Bangles</p>
+          </div>
+          <div className="jewelry-item">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2696/6a81/a5ea992106a830794b5470095a6cafc5?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hn2g82JTbUWDB9Ps8uJg90tX0knw4HqBR3MbtfNsHnEkrD7IcJAKPrUzCS4V9Av4ce-2K3aP7WYFlgXFQtrCmIlYPZA8d4XFVAK~gjc5uZl9Q8qO4kMjsAIWKTyNwkL~tdsJogIQ4gtlR3QvQv8g2fBy5WH-RAYsWUZIfuaZtgfX42PJ0k0TovcOQ-dWDedpHrqss1XOSss0tdIiOYIwdckZBuMK5d-pN7gR-~lr2oTiWz3yugARkl4f4jB4RQjpfd9qhM~2xR4FT1xTroqypZFGX5X-bM-0WBULRVnz8Sby7TL27PwPOTTEt7nr7uQ7DVOw1qf6ohDznRtORYBF~w__"
+              alt="Bracelets"
+            />
+            <p>Bracelets</p>
+          </div>
+        </div>
+      </div>
+      <div className="budget-shop">
+        <div>
+          <h3 className="kanvika-trust">Shop On Budget</h3>
+          <p className="p-center">
+            Brilliant design and unparalleled craftsmanship
+          </p>
+        </div>
+        <div>
+          <img src={Shopiimg} alt="shop" />
+        </div>
+      </div>
+      <div className="ring-size">
+<div className="ring-txt">
+  <h3>Are Forget Your Ring Size?</h3>
+  <p>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+</div>
+        <img src="https://s3-alpha-sig.figma.com/img/9b4e/9fcf/fb2284fd95fbf5ac0cb5a68a96b9424e?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aPSTIZWugzm3yxJYRqy5n-d1~y60YsU~25CCIdykQvTYB04YKkW4Ncmtxcu0w2ipytAYPJ6D6EscqZibU69naJ08jO5TyUDHZirhYT8pYp9ALMgTQgWCoAQKooqDw4VrVXCIps0VaznoXSYFHnYZoqndtTdHzvtRSNlbVXH~IStlG-UDmGW1ry14g6~sATiI4agL-yRaNGy-FRY0Xp7EmognwjH0ojlAtnQNzpCKNvtvswxJVY6xPpf~kDnhVG7jBZvVs3dUA1s16EL2-6oYxciomWKN78ehf2V03feNhDgr-0xAXEKs0lIKNTHsQ4dCCnJRQrT-u69WqXfBzmaH4w__" alt="ring"/>
       </div>
     </div>
   );
