@@ -1,0 +1,172 @@
+.rings-section {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.rings-title {
+  font-size: 28px;
+  color: #5b3a29;
+  margin-bottom: 10px;
+}
+
+.rings-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #d1b7a3;
+}
+
+.divider-icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #d1b7a3;
+}
+
+.rings-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ring-item {
+  text-align: center;
+  width: 100px;
+}
+
+.ring-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.ring-name {
+  font-size: 14px;
+  color: #5b3a29;
+}
+
+.ring-name.highlighted {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.product-page {
+    display: flex;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filters {
+    width: 20%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .filters h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #5b3a29;
+  }
+  
+  .filters h4 {
+    margin: 10px 0;
+  }
+  
+  .filters ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .filters ul li {
+    margin: 5px 0;
+    cursor: pointer;
+    color: #5b3a29;
+  }
+  
+  .filters input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    font-size: 14px;
+    color: #5b3a29;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    padding: 8px 16px;
+    background-color: #5b3a29;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #8b572a;
+  }
+  
+  .banner {
+    grid-column: span 2;
+    position: relative;
+  }
+  
+  .banner img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .banner-text {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
