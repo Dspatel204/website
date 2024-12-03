@@ -413,3 +413,105 @@ nav ul li a {
   gap: 10px;
   margin: 0 auto;
 }
+.jewelry-options {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 80%;
+}
+
+.option-card {
+  position: relative;
+  width: 730px;
+  height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.option-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.option-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #786158;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card-overlay:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.card-overlay p {
+  margin: 0;
+}
+.customer-review-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: "Arasik", Arial, sans-serif;
+}
+
+.customer-swiper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.profile-image {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.stars {
+  margin-top: 10px;
+  color: #f5a623;
+  font-size: 16px;
+}
