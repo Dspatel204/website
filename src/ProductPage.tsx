@@ -174,12 +174,12 @@ const ProductPage = () => {
               {products.map((product) => (
                 <div
                   key={product.id}
-                  style={{
-                    width: product.banner_image ? "70%" : "100%",
-                  }}
+                //   style={{
+                //     width: product.banner_image ? "70%" : "100%",
+                //   }}
                 >
                   {product.banner_image ? (
-                    <img src={product.banner_image} style={{ width: "100%" }} />
+                    <img src={product.banner_image} style={{ width: "60%" }} />
                   ) : (
                     <div className="product-card">
                       {product.isNew && <span className="new-badge">New</span>}

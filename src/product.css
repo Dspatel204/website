@@ -66,8 +66,8 @@
 }
 
 .filters {
-    width: 20%;
-    padding: 20px;
+    width: 40%;
+    padding: 130px;
     background-color: #f8f8f8;
     border-radius: 8px;
 }
@@ -99,7 +99,7 @@
 }
 
 .product-grid {
-    width: 80%;
+    /* width: 80%; */
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     gap: 20px;
@@ -177,12 +177,12 @@
     font-family: Arial, sans-serif;
 }
 
-.filters {
+/* .filters {
     width: 20%;
     padding: 20px;
     background: #f9f9f9;
     border-radius: 8px;
-}
+} */
 
 .filters .filter-header {
     margin-bottom: 20px;
@@ -211,7 +211,7 @@
 }
 
 .product-grid {
-    width: 80%;
+    /* width: 80%; */
     padding-left: 20px;
 }
 
@@ -236,6 +236,7 @@
 }
 
 .product-card {
+    width: 300px;
     position: relative;
     padding: 20px;
     background: #fff;
