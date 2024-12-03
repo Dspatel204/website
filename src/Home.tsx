@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 import Shopiimg from "./assets/Frame 1.png";
+import Faq from "./Faq";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 const Home = () => {
   const reviews = [
@@ -706,6 +707,7 @@ const Home = () => {
           ))}
         </Swiper>
       </div>
+      <Faq />
     </div>
   );
 };
