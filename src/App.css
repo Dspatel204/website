@@ -670,6 +670,7 @@ nav ul li a {
 .newsletter-input button:hover {
   background-color: #c4946c;
 }
+
 .footer {
   background-color: #5b3a29;
   color: #fff;
@@ -758,4 +759,30 @@ nav ul li a {
 
 .footer-icons span:hover {
   color: #c4946c;
+}
+
+.ring-sizes {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.ring-sizes .ring-logo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  font-family: "'Arial', sans-serif";
+  color: rgba(120, 97, 88, 1);
+}
+
+.ring-sizes .ring-logo .logo-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ring-sizes .ring-logo .logo-div .logo-txt {
+  font-size: 12px;
+  margin-top: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }

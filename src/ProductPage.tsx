@@ -106,6 +106,15 @@ const ProductPage = () => {
       availableColors: ["gold", "silver", "rose-gold"],
     },
   ];
+  type Product = {
+    id: number;
+    banner_image?: string; // Optional because not all products have it
+    name?: string;         // Optional for the same reason
+    price?: string;
+    isNew?: boolean;
+    availableColors?: string[];
+  };
+  
 
   return (
     <>
@@ -171,7 +180,7 @@ const ProductPage = () => {
           </div>
           <main className="product-grid">
             <div className="product-list">
-              {products.map((product) => (
+              {products.map((product:Product) => (
                 <div
                   key={product.id}
                 //   style={{

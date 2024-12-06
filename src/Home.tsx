@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import ContactSection from "./ContactSection";
 import Review from "./Review";
 import Shopiimg from "./assets/Frame 1.png";
