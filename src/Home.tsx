@@ -9,15 +9,30 @@ import Shopiimg from "./assets/Frame 1.png";
 import Faq from "./Faq";
 // import Footer from "./Footer";
 // import Header from "./Header";
+import HeaderJewwlery from "./assets/jewelery.png";
+import Timelessimg from "./assets/05.png";
+import Craftimg from "./assets/06.png";
+import Craftedimg from "./assets/01 (1).png";
+import Shineimg from "./assets/02 (1).png";
+import Ring from "./assets/Ring.png";
+import Earing from "./assets/Earing.png";
+import Pendants from "./assets/Pendants.png";
+import Bangles from "./assets/Bangles.png";
+import RingSizeimg from "./assets/Ringsize.png";
+import Bracelets from "./assets/Bracelts.png";
+import Jewimg from "./assets/08.png";
+import Styimg from "./assets/07.png";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 const Home = () => {
+  const jewdesign = [
+    { img1: Shineimg, img: Timelessimg },
+    { img: Craftedimg, img1: Craftimg },
+  ];
+
   return (
     <div>
       {/* <Header /> */}
-      <img
-        src="https://s3-alpha-sig.figma.com/img/d51a/49dc/f51d96ceae5a2c814575461f33198b86?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dp8sYRrztoxh8uhuMG155McGxYpS4ak5Iq-9wQnR5Br-V8Zed5cQ4rvg8X0hNxcUnD0qDE7BjnFz-z~qAEwCSmoOnjtnxB0Us7JEpsZnyBLUiI3~XwdFsaunPMvC9WuKyEy3R4GEDjmrfKCrm-L1OGDaGp9BNHp31dRyPiLs5KP54P04qpT3xl9ZrpFFLs5ukhj0cbkga94Z96Ra6PVkgGxQhgP4n9gLJBn4EGQIR-VDTGaYhFLWiKKZ8ustMWDy~KtQjDq4pasursMz4kPBDGY0sPDea5LWvAC4kqblK3XUT6I3W3x6FuHyX5yMuYdsfJWrV~M-OI7Jl~fBy7NHYw__"
-        style={{ width: "100%" }}
-      />
+      <img src={HeaderJewwlery} style={{ width: "100%" }} />
       <div className="drawtxt">
         Drawing on a design from 1962 and inspired by New York, a city in flux,
         HardWear by this is an expression of love’s transformative strength.
@@ -25,30 +40,18 @@ const Home = () => {
       <div className="grid">
         <div className="s-flex">
           <div className="grid-item one">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/c108/1c78/e1c7f31b446ea8b18aa1b131bc33a45a?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KrXwRxkHI9CRaN6-wyflpKxwwKYrMdFoPjfph5tniv9JE15JapoHM0dERKRHGUyyAH2JQH3f1vGy-HJz7cGkuuohsW9OQR5We2LsGuuIeTN4mZ~RmqyNoChP4TW1Q3~guujsSGp4G5PoNvy3rHzpXlKSpqYVSijz8naSpb4ykwrIP4MSTUA7Z~H42YB6b-ffbfogX70XkKTJYL9x-WzWFlkY1XS6LYffvNF-RiHe7AtnyXhKOImV4H7mepZwh1xItj0NQttCa7nRImv0vnO5swnWjNWMj1mciEaRMqM6zHG-ieWOz9QH1ZC7NW7IdtzKu4BRRwgcKewKdKMfuSFnIA__"
-              alt="Shine Bright, Shine Bold!"
-            />
+            <img src={Shineimg} alt="Shine Bright, Shine Bold!" />
           </div>
           <div className="grid-item two">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/db94/3ca6/0b8deb232971b492b1c152ff20e62027?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bzgEK6xnWnbewH0irinm9zg2axJZGDqrndrxCNurefai~uGpZVV7CFSzU0rAwRsPj8Iueop7wpX9AB4ZKvzV~u4gQaEzos6JOw9F9aA4ZrlckA4EQXJlHnb2HMHxmbqZi-DmmmNVgrLmR3Ec0NLv3z7V8G4jq6zqm6npIfAq8-l9kknX~nmoSSv5JLT1Ab9TpWskvkXNG6FeWLBVTe5855lTw3E84xyG6maEM6X2ou5BaNhzWBH~TMVSrDyhL~j4NyPL71ip2rSGD5CVAwU~TeMUGyhDWZFYuvolwnjUSfSXEane1fElmEQYsjP000MBFbZ0cInjCAtM62fsjr0Kmw__"
-              alt="Timeless Designs for Every Occasion"
-            />
+            <img src={Timelessimg} alt="Timeless Designs for Every Occasion" />
           </div>
         </div>
         <div className="s-flex">
           <div className="grid-item two">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/14b8/8dc4/d3f31866371d7091f1450e1cabbe6fc1?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RpMT4VtSEliA0M~Pt0zPJcleHN1ftScWbzUfELKV7~YufMe6pEYcj5T5GtFP-rt~33i3q6jCzahi9QzRVs4OJbT~DVSHZj83G5k5DJX3qmwqMgqANdqpPiS-ICl~bD2E2Soj2PF-Y3dJuZHUsGikGV8cdJBSWUZPrOwP20OfvPacj2DNF3oXmsvoJRCm1rRI1a7WhOHSlPHrPhSag8EKo6z26k2g86NRuEPEX~y-b5Cp04DTVEnDDqzpi1si1eWZYLe9OxHMzp8cVGK2uiqFJG3JWRGrsBn561x6yPyDkalCbrB1B0Ot0JKSD0A4avi-7AGtTCcQ0o-rXFWYJc7xHw__"
-              alt="Crafted with Love, Worn with Joy"
-            />
+            <img src={Craftimg} alt="Crafted with Love, Worn with Joy" />
           </div>
           <div className="grid-item one">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/04d9/48fc/1e9c6dbc6cb9c24cdcd6d76a69d1eee5?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cUcSE~8Va34vsbt7wIvryuNfhucJOa9uoe9lqKMvgOBIdaAmkJVwbL7QKV3446Jk~jgHusvXcO0iIzuEBke0ImSXE40rqmd164gscMVj5ZxgzKuiKjdleqZsvb0Cg-XaN7QTgDiB-7oul3P6kIEklRJkqNItPyZz84fRqLqj8Za~xNAGMfSiC8baTP5Ct8hC8PZt7sIGKWKzR4ojg6Egerx9JbJbaCfntMpmQC~I314Kle09GQPfpG58nueXXh76r8PHeLJEmPvwNV~3L8GthfegjTAGb6m~lHyNzxw0IWkLZhb45vSRz9i9G0Wq622nn4M46PrO9iY2D6Ahv-dOHw__"
-              alt="Crafted for Your Unique Style"
-            />
+            <img src={Craftedimg} alt="Crafted for Your Unique Style" />
           </div>
         </div>
       </div>
@@ -299,43 +302,25 @@ const Home = () => {
         <h2>Brilliant design and unparalleled craftsmanship</h2>
         <div className="jewelry-grid">
           <div className="jewelry-item">
-            <img
-              style={{ height: "400px" }}
-              src="https://s3-alpha-sig.figma.com/img/4d94/3e73/ec70b2ffa2627479002d45f50fbc30b2?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SJBn1RhGeDYU~ROnhL6X6XpVCcXcMJBY~bbueeb5LBWPDv2dvkLOUf9gIyUY8Dx9t5ezNJGTaMSfoZ4ZVb~jH-rKAGMp2QdUOZsk5Uo7~nR0kO9NSzr5H~BvfaK74vUflY5~WQUgQAlowil2--lZ8jbGyltDzDurLZTTAWUekuFtbXvQojTMmf8BOFwjfXzJhTBSRrVCO2CUXH0IzSRrFR2Z~ozCCZ3ZMIK0V9dCpC0wzrDtFzM9uJ6I9hcr0CZVv-8ru2bHaB-svzkTZ76x0aYufjzkrEkhYvW7TJk30syytsZp6pjQHp1aKSKkezheBf0Sz5o3oqcZqIQrJq-qRw__"
-              alt="Rings"
-            />
+            <img style={{ height: "400px" }} src={Ring} alt="Rings" />
             <p>Rings</p>
           </div>
           <div className="jewelry-item earing">
-            <img
-              style={{ height: "400px" }}
-              src="https://s3-alpha-sig.figma.com/img/885e/488a/9e4c05fd15e5c3b61943f29fcab53322?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f0xpfnU~xCEKknalsNk~mDv0wkdUyIGJvoW7HMPP-U0fOVQORyhNz3bMXeA3Vt-y9~kZ8sm1nLvXXSeGQ0dXcr3RxyMN0qlAw9EwExtIaExg9m7SXHcQSxzX50qphUwtHsvcQYx6rHAcylFvW-LoYrbGvEytf05sKcFnxUt~rUVkqzCke7yn-9vLMyOV5Idp9hfUWJoKGqW9RLTr7LF6ilQ79H20PBQFPprs~hWzkZ0s-ZgGF3h-WfPffq1hrkV-U6ETKw~wxbeDSOqGcPsDbW8p-4xSe6gysbz2mHBiAdf5bYynVcjDRgyrnN~OrDovDn3H6NeZmWbidJPb2cmLJg__"
-              alt="Earrings"
-            />
+            <img style={{ height: "400px" }} src={Earing} alt="Earrings" />
             <p>Earrings</p>
           </div>
           <div className="jewelry-item">
-            <img
-              style={{ height: "400px" }}
-              src="https://s3-alpha-sig.figma.com/img/bd02/8fa8/746fc4f6bf62311f581c7c0adcecb0b7?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F~RXfQkOcFP9gtBu5Va7whd7vpTkeIADU2gwWI6vsDnTGmnauFfHzVQzTeCW0xYlYZ0Jb64vSyQFYVLM0A8ZVRkSLvAvRlP8pRE5cttmEhfzwsleclvIai4xjpYUOtHx-TFdWjI30iXMzwEUwlVn4K6Uya1pSZdYv6Mup9~OZbcWNL0UOJssA0HQ4Uu8vKkd9Ou2U0LKvky4r4cg894kHmxnapqazyplsviMslJPl3aHX-k75GPJLQgpY8h6uP2EoxkjkayfLEHmcu9p~kIM-1c-w5~j1-K6UVkybDFWru5Wo~05RIJYhn0ZhcejdYeiQBMMLbv1ocGJriDYeXo1kQ__"
-              alt="Pendants"
-            />
+            <img style={{ height: "400px" }} src={Pendants} alt="Pendants" />
             <p>Pendants</p>
           </div>
         </div>
         <div className="jew-flex">
           <div className="jewelry-item">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/1173/bab3/8982791c35ae390dd65b703997275d1b?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mTTYBhyFRYKidNrYjFcR~pQ4R9ebnqDMWgr4YgoatG1HStsbXIYPBljeraptrsewWLI3l47t~71jptKuXwHYWz-t51F9HsS1t38e61mNHT49C~iLtxQG5MiGMnHD3KLRGFRF56gwlj7ohEhbU1rEU6IBChEQ1SW9K~Fykvdg5N2OPffDo1AHWhHJeOFE3moJTeyv1ZXdUCOOdrfRfWCRQ33Bno-xXKC0-Qdg60HW~SrCGMzEzIucozeCZ24J6rdw0bWiU7JnaXE1G8V1nUYdCkiZnwtDomOO-YESlCDXVcHd5CBE1VQFj612gGGa4rbGKprpZBK1jflNEFDG82vA3g__"
-              alt="Bangles"
-            />
+            <img src={Bangles} alt="Bangles" />
             <p>Bangles</p>
           </div>
           <div className="jewelry-item">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/2696/6a81/a5ea992106a830794b5470095a6cafc5?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hn2g82JTbUWDB9Ps8uJg90tX0knw4HqBR3MbtfNsHnEkrD7IcJAKPrUzCS4V9Av4ce-2K3aP7WYFlgXFQtrCmIlYPZA8d4XFVAK~gjc5uZl9Q8qO4kMjsAIWKTyNwkL~tdsJogIQ4gtlR3QvQv8g2fBy5WH-RAYsWUZIfuaZtgfX42PJ0k0TovcOQ-dWDedpHrqss1XOSss0tdIiOYIwdckZBuMK5d-pN7gR-~lr2oTiWz3yugARkl4f4jB4RQjpfd9qhM~2xR4FT1xTroqypZFGX5X-bM-0WBULRVnz8Sby7TL27PwPOTTEt7nr7uQ7DVOw1qf6ohDznRtORYBF~w__"
-              alt="Bracelets"
-            />
+            <img src={Bracelets} alt="Bracelets" />
             <p>Bracelets</p>
           </div>
         </div>
@@ -363,26 +348,17 @@ const Home = () => {
             Find Size
           </button>
         </div>
-        <img
-          src="https://s3-alpha-sig.figma.com/img/9b4e/9fcf/fb2284fd95fbf5ac0cb5a68a96b9424e?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aPSTIZWugzm3yxJYRqy5n-d1~y60YsU~25CCIdykQvTYB04YKkW4Ncmtxcu0w2ipytAYPJ6D6EscqZibU69naJ08jO5TyUDHZirhYT8pYp9ALMgTQgWCoAQKooqDw4VrVXCIps0VaznoXSYFHnYZoqndtTdHzvtRSNlbVXH~IStlG-UDmGW1ry14g6~sATiI4agL-yRaNGy-FRY0Xp7EmognwjH0ojlAtnQNzpCKNvtvswxJVY6xPpf~kDnhVG7jBZvVs3dUA1s16EL2-6oYxciomWKN78ehf2V03feNhDgr-0xAXEKs0lIKNTHsQ4dCCnJRQrT-u69WqXfBzmaH4w__"
-          alt="ring"
-        />
+        <img src={RingSizeimg} alt="ring" />
       </div>
       <div className="jewelry-options">
         <div className="option-card">
-          <img
-            src="https://www.figma.com/file/RNqdm0Wowanflk9DqcXUnD/image/e106ec914fa8ee415e7fd08f29304a9962eba879"
-            alt="Create Your Own Jewellery"
-          />
+          <img src={Jewimg} alt="Create Your Own Jewellery" />
           <div className="card-overlay">
             <p>Create Your Own Jewellery →</p>
           </div>
         </div>
         <div className="option-card">
-          <img
-            src="https://s3-alpha-sig.figma.com/img/1d8e/32e7/415bdf0243f749f07a5198606b6a5b63?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SiXOCsC0-tBSmcitzM~9Ke1PyS89tAZVN0GUD1tSh8-QxWNi7UVXNNVNgGExGfih-rdrW-f4XqIQH5xNaUXfG2UnyyQ8z7ejjvVFAB14TpUUoi8qUDEfQzLntHtdw8SVvEsAkov5QXtH2aO8e7h25H-RawrcPd15UMvSc7TptaRbXsetHDKY5MSx8t9LhHNuDj07Ijr9tKIALFWRCqPGASMRa~5RFPid89Prk8rpg9wiUEA2R-UZ4y91CLScN6uUGpGZPywf~MIk1m5PxP~-wV0si9d19Y235dbmjO-QvFl9~dh0Q6g7zfs~IdnvSI6RCB~qOI5IgwgwbeHCwPmoDw__"
-            alt="Consult With Our Stylist"
-          />
+          <img src={Styimg} alt="Consult With Our Stylist" />
           <div className="card-overlay">
             <p>Consult With Our Stylist →</p>
           </div>

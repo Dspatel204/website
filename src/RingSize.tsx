@@ -1,10 +1,37 @@
+import RingSizeImg from "./assets/download 1.png";
 const RingSize = () => {
   const tableData = [
     { fingerSize: 0, diameter: 12.4, circumference: 39.0 },
     { fingerSize: 0.5, diameter: 12.8, circumference: 40.2 },
-    { fingerSize: 1, diameter: 13.0, circumference: 41.0 },
-    { fingerSize: 15, diameter: 24.4, circumference: 76.8 },
-    // Add more rows as needed
+    { fingerSize: 1, diameter: 13.2, circumference: 41.4 },
+    { fingerSize: 1.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 2, diameter: 14, circumference: 44.0 },
+    { fingerSize: 2.5, diameter: 14.4, circumference: 45.2 },
+    { fingerSize: 3, diameter: 14.8, circumference: 46.5 },
+    { fingerSize: 3.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 4, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 4.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 5.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 6, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 6.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 7, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 7.5, diameter: 12.4, circumference: 39.0 },
+    { fingerSize: 8, diameter: 12.8, circumference: 40.2 },
+    { fingerSize: 8.5, diameter: 13.2, circumference: 41.4 },
+    { fingerSize: 9, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 9.5, diameter: 14, circumference: 44.0 },
+    { fingerSize: 10, diameter: 14.4, circumference: 45.2 },
+    { fingerSize: 10.5, diameter: 14.8, circumference: 46.5 },
+    { fingerSize: 11, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 11.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 12, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 12.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 13, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 13.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 14, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 14.5, diameter: 13.6, circumference: 42.7 },
+    { fingerSize: 15, diameter: 13.6, circumference: 42.7 },
   ];
 
   return (
@@ -53,17 +80,14 @@ const RingSize = () => {
             padding: "20px",
           }}
         >
-          <img
-            style={{ width: "100%" }}
-            src="https://s3-alpha-sig.figma.com/img/1130/c0fe/38021abe4c92dcb1c943f0d0ce3a7012?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LutftD3-5uaQAWHb0gUb7fLVZFKXunfdw1vQ6GIcLCeQj9jPCHbKoIvl97l6nGVGmphRMxH5Zp1i9mLaHTKuGEp1PcCLecKQeOONTyE7xjSgrpQXpReUEsRi-trr41dSs6aLMGo~7NikW6lfBxzvF65lHQj1mi0IifgMYFaqr6Mz6WdUEAGXk1SBCxW6OcMudGJcbFV9Gmtte5vZSGAeaalksOFN7svaSgthy670zFb40Zwy3IR666tEoq5NrsjLHVG14-RnWPxFtDyorvyGVmEusjcUi8FhD9Q3oqO-hyqyVvULUtcBFlSir2OuJ9z9hIBCjEjYGPVSYSh~HICOpw__"
-          />
+          <img style={{ width: "100%" }} src={RingSizeImg} />
         </div>
       </div>
       <div className="ring-size-container">
         {/* Left Section */}
         <div className="left-section">
           <table>
-            <thead>
+            <thead style={{ backgroundColor: "rgba(120, 97, 88, 1)" }}>
               <tr>
                 <th>Finger Size</th>
                 <th>Diameter (MM)</th>
@@ -93,17 +117,14 @@ const RingSize = () => {
 
           <h2>How To Use</h2>
           <ol>
-            <li>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </li>
-            <li>
-              Lorem Ipsum has been the industry's standard dummy text since the
-              1500s.
-            </li>
-            <li>Add additional steps as necessary.</li>
+            {[1, 2, 3, 4, 5, 6].map(() => (
+              <li>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s,
+              </li>
+            ))}
           </ol>
-
           <h2>Note</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

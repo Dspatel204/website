@@ -4,55 +4,49 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-
+import ReviewImg from "./assets/Review.png";
 const Review = () => {
   const reviews = [
     {
       name: "Pravesh Soni",
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image:
-        "https://s3-alpha-sig.figma.com/img/9fed/d075/c698ce83a80ac7e18000932ce1af7b03?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IEk~K-hf9ex28IzTNnDI5I7m41zxl8CbnwGAI09gIiatDqT~yk5q1He~QUp9Pm7aT5jq4Bb2Nx-g2D6GbpwWnwf6w0X15nEZZmfMbuvq4Bww9HwUjObe~-s3JDmSLjhNguSoeg1iJOANuCbUQ9I3YHclzOBfMsTEVwtm3UYdSwI7DBDxdlZ784Ad1uWSsgjh8UYUuNxIsymhNjmLlrXqm0hMYWOv24UC18qgYfBQPetTeL02pnuhWADM9jFT5Lq1m2-Rd2UT1OluyfHtwu3G~5chF0Fx7Suf2lKuYvwwzZXMe~qo0rNAO~xec2LDefdoUE6S4OBWwTvjeCXe2eoc3A__", // Replace with actual image paths
+      image: ReviewImg, // Replace with actual image paths
       stars: 5,
     },
     {
       name: "Pravesh Soni",
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image:
-        "https://s3-alpha-sig.figma.com/img/9fed/d075/c698ce83a80ac7e18000932ce1af7b03?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IEk~K-hf9ex28IzTNnDI5I7m41zxl8CbnwGAI09gIiatDqT~yk5q1He~QUp9Pm7aT5jq4Bb2Nx-g2D6GbpwWnwf6w0X15nEZZmfMbuvq4Bww9HwUjObe~-s3JDmSLjhNguSoeg1iJOANuCbUQ9I3YHclzOBfMsTEVwtm3UYdSwI7DBDxdlZ784Ad1uWSsgjh8UYUuNxIsymhNjmLlrXqm0hMYWOv24UC18qgYfBQPetTeL02pnuhWADM9jFT5Lq1m2-Rd2UT1OluyfHtwu3G~5chF0Fx7Suf2lKuYvwwzZXMe~qo0rNAO~xec2LDefdoUE6S4OBWwTvjeCXe2eoc3A__",
+      image: ReviewImg,
       stars: 5,
     },
     {
       name: "Pravesh Soni",
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image:
-        "https://s3-alpha-sig.figma.com/img/9fed/d075/c698ce83a80ac7e18000932ce1af7b03?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IEk~K-hf9ex28IzTNnDI5I7m41zxl8CbnwGAI09gIiatDqT~yk5q1He~QUp9Pm7aT5jq4Bb2Nx-g2D6GbpwWnwf6w0X15nEZZmfMbuvq4Bww9HwUjObe~-s3JDmSLjhNguSoeg1iJOANuCbUQ9I3YHclzOBfMsTEVwtm3UYdSwI7DBDxdlZ784Ad1uWSsgjh8UYUuNxIsymhNjmLlrXqm0hMYWOv24UC18qgYfBQPetTeL02pnuhWADM9jFT5Lq1m2-Rd2UT1OluyfHtwu3G~5chF0Fx7Suf2lKuYvwwzZXMe~qo0rNAO~xec2LDefdoUE6S4OBWwTvjeCXe2eoc3A__",
+      image: ReviewImg,
       stars: 5,
     },
     {
       name: "Pravesh Soni",
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image:
-        "https://s3-alpha-sig.figma.com/img/9fed/d075/c698ce83a80ac7e18000932ce1af7b03?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IEk~K-hf9ex28IzTNnDI5I7m41zxl8CbnwGAI09gIiatDqT~yk5q1He~QUp9Pm7aT5jq4Bb2Nx-g2D6GbpwWnwf6w0X15nEZZmfMbuvq4Bww9HwUjObe~-s3JDmSLjhNguSoeg1iJOANuCbUQ9I3YHclzOBfMsTEVwtm3UYdSwI7DBDxdlZ784Ad1uWSsgjh8UYUuNxIsymhNjmLlrXqm0hMYWOv24UC18qgYfBQPetTeL02pnuhWADM9jFT5Lq1m2-Rd2UT1OluyfHtwu3G~5chF0Fx7Suf2lKuYvwwzZXMe~qo0rNAO~xec2LDefdoUE6S4OBWwTvjeCXe2eoc3A__", // Replace with actual image paths
+      image: ReviewImg,
       stars: 5,
     },
     {
       name: "Pravesh Soni",
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image:
-        "https://s3-alpha-sig.figma.com/img/9fed/d075/c698ce83a80ac7e18000932ce1af7b03?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IEk~K-hf9ex28IzTNnDI5I7m41zxl8CbnwGAI09gIiatDqT~yk5q1He~QUp9Pm7aT5jq4Bb2Nx-g2D6GbpwWnwf6w0X15nEZZmfMbuvq4Bww9HwUjObe~-s3JDmSLjhNguSoeg1iJOANuCbUQ9I3YHclzOBfMsTEVwtm3UYdSwI7DBDxdlZ784Ad1uWSsgjh8UYUuNxIsymhNjmLlrXqm0hMYWOv24UC18qgYfBQPetTeL02pnuhWADM9jFT5Lq1m2-Rd2UT1OluyfHtwu3G~5chF0Fx7Suf2lKuYvwwzZXMe~qo0rNAO~xec2LDefdoUE6S4OBWwTvjeCXe2eoc3A__",
+      image: ReviewImg,
       stars: 5,
     },
     {
       name: "Pravesh Soni",
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      image:
-        "https://s3-alpha-sig.figma.com/img/9fed/d075/c698ce83a80ac7e18000932ce1af7b03?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IEk~K-hf9ex28IzTNnDI5I7m41zxl8CbnwGAI09gIiatDqT~yk5q1He~QUp9Pm7aT5jq4Bb2Nx-g2D6GbpwWnwf6w0X15nEZZmfMbuvq4Bww9HwUjObe~-s3JDmSLjhNguSoeg1iJOANuCbUQ9I3YHclzOBfMsTEVwtm3UYdSwI7DBDxdlZ784Ad1uWSsgjh8UYUuNxIsymhNjmLlrXqm0hMYWOv24UC18qgYfBQPetTeL02pnuhWADM9jFT5Lq1m2-Rd2UT1OluyfHtwu3G~5chF0Fx7Suf2lKuYvwwzZXMe~qo0rNAO~xec2LDefdoUE6S4OBWwTvjeCXe2eoc3A__",
+      image: ReviewImg,
       stars: 5,
     },
   ];

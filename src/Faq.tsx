@@ -28,7 +28,7 @@ const faqData = [
 ];
 
 const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleFAQ = (index: any) => {
     setActiveIndex(activeIndex === index ? null : index);

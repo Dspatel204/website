@@ -1,18 +1,17 @@
 import { useState } from "react";
 import RingsSection from "./RingsSection";
-
+import banner1 from "./assets/Product banner.png";
+import banner2 from "./assets/Product banner2.png";
 const ProductPage = () => {
   const banners = [
     {
       id: 1,
-      banner_image:
-        "https://s3-alpha-sig.figma.com/img/e41d/d497/04e20c4b9adac9249b6d29dbb8143a0a?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m1zuTmhjo7Mv6BIkdrZqaiOzR1Kty~uBnwFT003guaxlrv9X6xAvpG9wUkLYJPsC5kc~38z7mhZdMYQky6vdUecYe9333p6QUOP8lSCCs-Uu6QQ7YyKmkkvq4FLOMJEPHN27fG1J1YvL0pDca~79FmQOmNDWcTy-KBqP2nuo2R-9J9YllGwKsP4~S34dkgz6v4zSPiyczFNG8rSuLyDdEZYXU8m0AnbW1jkXU9K9N87ZwPKhmhivkDHBAqpbkO7HB3fawD6jjiniZzV~RvqRRMBChmWu50suaumQAa3mxuGCXyPhEwCHzCzxTWTcyAmGzZg1S0MuXkuT9JLY4kwyNg__",
+      banner_image: banner1,
       text: "We Create Your Dream Customized Jewelry",
     },
     {
       id: 2,
-      banner_image:
-        "https://s3-alpha-sig.figma.com/img/6e66/ae08/0b3c0476090f9838c54fc38e67514a72?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W0xzI7jbNjbyyzRRPdHEup02HmB6OY4zO7~hlATvOQ8EDf6WbJ2GNayDPOih8THgng4CfQ4Ht0~IOMwgu6EtF5RPEN7uvTtF4f0uGE9c6WGMtzFe2ZBPi76kakSZm1oRmVyW3OrWtmL10x41hvRX2ONeGBjx0QvQjd7lo22iUl4DC-TNzmqGmLISMmusFhAllSHaL-H4RduQtrBjoL4VNuTkYuXnBlLvB4K0pXTZjuScqXu3Ma008mnQJGG1iLRRJvg5a5-8g-y~ZDwFVwdZ-caOkAaqTu14Z5G1dSx-k-TrlE1iev9Nye~IRcNlGFrZ3DMnLRM7-Pa8ivOpm8IYIw__",
+      banner_image: banner2,
       text: "Elevate Your Style: Shop Elegant Jewelry",
     },
   ];
@@ -109,12 +108,11 @@ const ProductPage = () => {
   type Product = {
     id: number;
     banner_image?: string; // Optional because not all products have it
-    name?: string;         // Optional for the same reason
+    name?: string; // Optional for the same reason
     price?: string;
     isNew?: boolean;
     availableColors?: string[];
   };
-  
 
   return (
     <>
@@ -180,12 +178,12 @@ const ProductPage = () => {
           </div>
           <main className="product-grid">
             <div className="product-list">
-              {products.map((product:Product) => (
+              {products.map((product: Product) => (
                 <div
                   key={product.id}
-                //   style={{
-                //     width: product.banner_image ? "70%" : "100%",
-                //   }}
+                  //   style={{
+                  //     width: product.banner_image ? "70%" : "100%",
+                  //   }}
                 >
                   {product.banner_image ? (
                     <img src={product.banner_image} style={{ width: "60%" }} />
