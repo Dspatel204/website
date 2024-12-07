@@ -24,11 +24,6 @@ import Jewimg from "./assets/08.png";
 import Styimg from "./assets/07.png";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 const Home = () => {
-  const jewdesign = [
-    { img1: Shineimg, img: Timelessimg },
-    { img: Craftedimg, img1: Craftimg },
-  ];
-
   return (
     <div>
       {/* <Header /> */}
