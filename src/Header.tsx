@@ -1,3 +1,6 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Header = () => {
   return (
     <>
@@ -5,6 +8,9 @@ const Header = () => {
         First Order Get Free Up to 20% on Our Selected Jewelery.
       </div>
       <header className="header-container">
+        <div className="menu-icon">
+          <FontAwesomeIcon icon={faBars} />
+        </div>
         <div className="nav-left">
           <span className="icon">
             <svg
@@ -237,4 +243,4 @@ const Header = () => {
     </>
   );
 };
-export default Header
+export default Header;

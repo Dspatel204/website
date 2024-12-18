@@ -860,3 +860,89 @@ table tr:nth-child(even) {
   color: rgba(120, 97, 88, 1);
   text-decoration: none;
 }
+
+
+.header-container .menu-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header-container .nav-left {
+    display: none;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .grid-item.one {
+    width: auto;
+  }
+
+  .s-flex {
+    margin: 20px 0px;
+  }
+
+  .nav-center .book-appointment {
+    display: none;
+  }
+
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  .header-container .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+
+  .nav-center .book-appointment {
+    margin: 0;
+  }
+
+  .kanvika-trust {
+    font-size: 30px;
+  }
+
+  .p-box p {
+    font-size: 15px;
+  }
+
+  .jewelry-item img {
+    width: auto;
+    height: auto;
+  }
+
+  .ring-size {
+    width: 100%;
+  }
+
+  .ring-txt p {
+    width: 100%;
+  }
+
+  .ring-size img {
+    width: 100%;
+  }
+
+  .jewelry-container .jew-flex {
+    flex-direction: column;
+  }
+
+  .jewelry-options {
+    flex-direction: column;
+  }
+
+  .jewelry-options .option-card {
+    width: auto;
+  }
+
+  .faq-question {
+    font-size: 11px;
+  }
+}

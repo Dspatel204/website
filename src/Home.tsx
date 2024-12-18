@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import ContactSection from "./ContactSection";
 import Review from "./Review";
 import Shopiimg from "./assets/Frame 1.png";
@@ -25,10 +25,10 @@ import Styimg from "./assets/07.png";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 const Home = () => {
   return (
-    <div>
+    <div> 
       {/* <Header /> */}
       <img src={HeaderJewwlery} style={{ width: "100%" }} />
-      <div className="drawtxt">
+      <div className="drawtxt">1  44
         Drawing on a design from 1962 and inspired by New York, a city in flux,
         HardWear by this is an expression of love’s transformative strength.
       </div>
