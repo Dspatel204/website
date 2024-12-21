@@ -5,21 +5,10 @@ import { useState } from "react";
 const Header = () => {
   const [CloseMenu, setCloseMenu] = useState(false);
   function toggleNav() {
-    var overlay = document.getElementById("myOverlay");
-    var backdrop = document.getElementById("myBackdrop");
-
-    // If the overlay is not open, open it and show the backdrop
-    if (overlay.style.width === "320px") {
-      overlay.style.width = "0";
-      backdrop.style.display = "none"; // Hide backdrop when overlay is closed
-    } else {
-      overlay.style.width = "320px";
-      backdrop.style.display = "block"; // Show backdrop when overlay is open
-    }
+    setCloseMenu(true);
   }
   function closeNav() {
-    document.getElementById("myOverlay").style.width = "0";
-    document.getElementById("myBackdrop").style.display = "none"; // Hide backdrop when overlay is closed
+    setCloseMenu(false);
   }
   return (
     <>
@@ -32,10 +21,19 @@ const Header = () => {
         </div>
         <div
           id="myBackdrop"
+          style={{
+            display: CloseMenu ? "block" : "none",
+          }}
           className="backdrop"
           onClick={closeNav}
         ></div>
-        <div id="myOverlay" className="overlay d-xl-none d-block">
+        <div
+          id="myOverlay"
+          style={{
+            width: CloseMenu ? "320px" : "0 ",
+          }}
+          className="overlay d-xl-none d-block"
+        >
           <div className="logo-close d-flex align-items-center justify-content-between">
             <a className="toggle-logo p-0 d-lg-none" href="#">
               {/* <img src="../kanvica/img/logo.svg" alt="logo"> */}
