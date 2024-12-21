@@ -30,7 +30,7 @@ const Home = () => {
       <img src={HeaderJewwlery} style={{ width: "100%" }} />
       <div className="drawtxt">1  44
         Drawing on a design from 1962 and inspired by New York, a city in flux,
-        HardWear by this is an expression of love’s transformative strength.
+        HardWear by this is an expression of love’s transformative strength.menu-icon
       </div>
       <div className="grid">
         <div className="s-flex">

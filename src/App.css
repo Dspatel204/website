@@ -865,6 +865,154 @@ table tr:nth-child(even) {
 .header-container .menu-icon {
   display: none;
 }
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #FDFDFD;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.logo-close {
+  padding: 16px;
+}
+
+.overlay a:hover {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  font-size: 36px;
+  display: flex;
+  padding: 0;
+}
+
+.toggle-logo {
+  width: 120px;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.navbar-collapse {
+  display: block;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  box-shadow: none !important;
+  padding: 0;
+  display: flex !important;
+}
+
+.navbar-brand {
+  width: 100px;
+  padding-top: 0;
+}
+
+.mobile-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-icon a.icon {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-icon a.icon svg {
+  width: 24px;
+}
+
+.mobile-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 16px;
+  align-items: center;
+}
+
+.login-details {
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  background: #F5F5F5;
+  align-items: flex-start;
+  margin: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.login-details .icon {
+  color: #2F2F2F;
+  letter-spacing: normal;
+  font-size: 16px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-nav {
+  margin: 12px 0;
+  padding: 10px;
+}
+.overlay a {
+  color: #000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 16px;
+  border-bottom: 1px solid #786158;
+}
+
+@media (max-width:768px) {
+  .grid-item.one {
+    width: auto;
+  }
+
+  .p-box p {
+    font-size: 12px;
+  }
+
+  .jewelry-grid {
+    display: flex;
+  }
+
+  .jewelry-item img {
+    height: 100% !important;
+  }
+}
 
 @media (max-width: 600px) {
   .header-container .nav-left {
@@ -877,6 +1025,10 @@ table tr:nth-child(even) {
 
   .grid-item.one {
     width: auto;
+  }
+
+  .jewelry-grid {
+    display: grid;
   }
 
   .s-flex {
@@ -926,10 +1078,6 @@ table tr:nth-child(even) {
     width: 100%;
   }
 
-  .ring-size img {
-    width: 100%;
-  }
-
   .jewelry-container .jew-flex {
     flex-direction: column;
   }
@@ -944,5 +1092,10 @@ table tr:nth-child(even) {
 
   .faq-question {
     font-size: 11px;
+  }
+
+  .ring-txt {
+    left: 25px;
+    top: 25px;
   }
 }
