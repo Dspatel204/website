@@ -865,6 +865,7 @@ table tr:nth-child(even) {
 .header-container .menu-icon {
   display: none;
 }
+
 .overlay {
   height: 100%;
   width: 0;
@@ -987,6 +988,7 @@ table tr:nth-child(even) {
   margin: 12px 0;
   padding: 10px;
 }
+
 .overlay a {
   color: #000;
 }
@@ -1097,5 +1099,11 @@ table tr:nth-child(even) {
   .ring-txt {
     left: 25px;
     top: 25px;
+  }
+}
+
+@media (max-width:375px) {
+  .sub-menu {
+    display: none;
   }
 }
